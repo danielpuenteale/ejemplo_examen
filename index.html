@@ -1,19 +1,30 @@
+<!--Ejercicio 1--> 
+
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width, initial-scale=1.0" />
-    <title>prueba exmanen js</title>
-    <link rel="stylesheet" href="estilos.css" />
+    <title>Examen</title>
   </head>
   <body>
-    <h1>Ejerecicio 1</h1>
-    <input type="text" placeholder="Nombre" />
-    <input type="text" placeholder="Apellido" />
-    <button>Enviar</button>
+    <h2>Formulario de saludo</h2>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" placeholder="" />
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" placeholder="" />
+    <button onclick="saludar()">Enviar</button>
 
     <script>
-    
+      function saludar() {
+        const nombre = document.querySelector("#nombre").value;
+        const apellido = document.querySelector("#apellido").value;
+
+        const mensaje = "Buenos días " + nombre + " " + apellido;
+
+        console.log(mensaje);
+        alert(mensaje);
+      }
     </script>
   </body>
 </html>
+
