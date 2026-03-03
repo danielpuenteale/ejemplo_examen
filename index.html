@@ -1,18 +1,26 @@
-<!--Ejercicio 1--> 
-
 <!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <title>Examen</title>
+    <link rel="stylesheet" href="estilos.css" />
   </head>
   <body>
     <h2>Formulario de saludo</h2>
     <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" placeholder="" />
+    <input type="text" id="nombre" />
     <label for="apellido">Apellido:</label>
-    <input type="text" id="apellido" placeholder="" />
+    <input type="text" id="apellido" />
     <button onclick="saludar()">Enviar</button>
+
+    <!--ej 2-->
+
+    <div class="fondo"></div>
+    <div class="coloresconjunto">
+      <div class="rojo"><button>rojo</button></div>
+      <div class="verde"><button>amarillo</button></div>
+      <div class="azul"><button>azul</button></div>
+    </div>
 
     <script>
       function saludar() {
@@ -24,7 +32,8 @@
         console.log(mensaje);
         alert(mensaje);
       }
+
+      //ej 2
     </script>
   </body>
 </html>
-
